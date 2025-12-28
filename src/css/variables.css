@@ -1,0 +1,9 @@
+:root {
+    --primary: #1a1a2e;
+    --accent: #00d4ff;
+    --text: #e0e0e0;
+    --bg: #0f0f1a;
+    --card: #16213e;
+    --radius: 16px;
+    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "selfpage_financespec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp -r src/html/* dist/ 2>/dev/null || true && cp -r src/assets dist/ 2>/dev/null || true && cp -r src/css dist/ 2>/dev/null || true && cp -r src/js dist/ 2>/dev/null || true",
+    "serve": "npm run build && cd dist && python3 -m http.server 8000",
+    "start": "npm run serve",
+    "vercel-build": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
