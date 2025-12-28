@@ -8,8 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Theme switcher ===
     const themeToggle = document.querySelector('.theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-    document.body.classList.add(`theme-${currentTheme}`);
+    // По умолчанию всегда темная тема
+    const savedTheme = localStorage.getItem('theme');
+    const currentTheme = savedTheme || 'dark';
+    
+    // Убеждаемся, что темная тема применена по умолчанию
+    document.body.classList.remove('theme-light');
+    document.body.classList.add('theme-dark');
+    
+    // Если сохранена светлая тема, применяем её
+    if (savedTheme === 'light') {
+        document.body.classList.remove('theme-dark');
+        document.body.classList.add('theme-light');
+    }
+    
     themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 
     themeToggle.addEventListener('click', () => {
