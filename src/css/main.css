@@ -691,6 +691,34 @@ body {
     gap: 32px;
     margin-top: 24px;
 }
+.exp-card--wb {
+    background: linear-gradient(165deg, var(--card) 0%, rgba(203, 17, 171, 0.08) 60%, rgba(72, 17, 115, 0.12) 100%);
+    border: 1px solid rgba(203, 17, 171, 0.28);
+}
+.theme-light .exp-card--wb {
+    background: linear-gradient(165deg, #ffffff 0%, #fdeffa 100%);
+    border-color: rgba(203, 17, 171, 0.35);
+}
+.exp-card--wb h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.wb-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #CB11AB 0%, #481173 100%);
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(203, 17, 171, 0.35);
+    flex-shrink: 0;
+}
+.wb-badge svg { display: block; }
+
 .exp-period { font-size: 0.9rem; opacity: 0.8; margin-bottom: 6px; }
 .exp-position { font-weight: 600; margin-bottom: 8px; color: var(--accent); }
 .exp-company-desc {
