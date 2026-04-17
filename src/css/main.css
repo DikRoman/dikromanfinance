@@ -861,20 +861,9 @@ section[id] { scroll-margin-top: 90px; }
     object-fit: contain;
     display: block;
 }
-.exp-logo--wb {
-    background: linear-gradient(135deg, #CB11AB 0%, #481173 100%);
-    box-shadow: 0 6px 18px rgba(203, 17, 171, 0.4);
-    padding: 4px;
-}
-.exp-logo--wb img {
-    filter: brightness(0) invert(1);
-}
 .theme-light .exp-logo {
     background: #f5f5f7;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.theme-light .exp-logo--wb {
-    background: linear-gradient(135deg, #CB11AB 0%, #481173 100%);
 }
 
 @media (max-width: 768px) {
