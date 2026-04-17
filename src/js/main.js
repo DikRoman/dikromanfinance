@@ -8,20 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Theme switcher ===
     const themeToggle = document.querySelector('.theme-toggle');
-    // По умолчанию всегда темная тема
-    const savedTheme = localStorage.getItem('theme');
-    const currentTheme = savedTheme || 'dark';
-    
-    // Убеждаемся, что темная тема применена по умолчанию
-    document.body.classList.remove('theme-light');
-    document.body.classList.add('theme-dark');
-    
-    // Если сохранена светлая тема, применяем её
-    if (savedTheme === 'light') {
-        document.body.classList.remove('theme-dark');
-        document.body.classList.add('theme-light');
-    }
-    
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.classList.add(`theme-${currentTheme}`);
     themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 
     themeToggle.addEventListener('click', () => {
@@ -32,43 +20,23 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.textContent = isDark ? '☀️' : '🌙';
     });
 
-    // === View buttons switcher (HR / Finance / Projects) ===
+    // === View buttons switcher (HR / Finance) ===
     const viewButtons = document.querySelectorAll('.view-btn');
 
     viewButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Активируем выбранную кнопку
             viewButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            const view = btn.dataset.view; // hr | finance | projects
+            const view = btn.dataset.view; // hr | finance
 
-            // Скрываем/показываем Summary и Experience
-            const summarySection = document.querySelector('.summary');
-            const experienceSection = document.querySelector('.experience');
-            const projectsSection = document.getElementById('projects-view');
+            document.querySelectorAll('#view-summary .view-content').forEach(el => el.classList.remove('active'));
+            const summaryBlock = document.querySelector(`#${view}-summary`);
+            if (summaryBlock) summaryBlock.classList.add('active');
 
-            if (view === 'projects') {
-                summarySection.style.display = 'none';
-                experienceSection.style.display = 'none';
-                projectsSection.style.display = 'block';
-                projectsSection.classList.add('active');
-            } else {
-                summarySection.style.display = 'block';
-                experienceSection.style.display = 'block';
-                if (projectsSection) {
-                    projectsSection.style.display = 'none';
-                    projectsSection.classList.remove('active');
-                }
-
-                // HR / Finance — переключаем контент внутри Summary и Experience
-                document.querySelectorAll('#view-summary .view-content').forEach(el => el.classList.remove('active'));
-                document.querySelector(`#${view}-summary`).classList.add('active');
-
-                document.querySelectorAll('.experience .view-content').forEach(el => el.classList.remove('active'));
-                const expBlock = document.querySelector(`#${view}-experience`);
-                if (expBlock) expBlock.classList.add('active');
-            }
+            document.querySelectorAll('.experience .view-content').forEach(el => el.classList.remove('active'));
+            const expBlock = document.querySelector(`#${view}-experience`);
+            if (expBlock) expBlock.classList.add('active');
         });
     });
 

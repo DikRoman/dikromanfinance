@@ -27,13 +27,17 @@
 </head>
 <body class="theme-dark">
     <nav class="navbar">
-        <div class="container">
+        <div class="top-notice">
+            <div class="container top-notice__inner">
+                <span data-key="top_notice">Открыт к обсуждению предложений</span>
+            </div>
+        </div>
+        <div class="container navbar-main">
             <a class="logo" data-key="name">Dikarev Roman</a>
             <ul class="nav-links">
                 <li><a href="#home" data-key="nav_home">Home</a></li>
                 <li><a href="#experience" data-key="nav_experience">Experience</a></li>
-                <li><a href="#projects-view" data-key="nav_projects">Personal Projects</a></li>
-                <li><a href="#skills" data-key="nav_skills">Skills</a></li>
+                <li><a href="#skills" class="nav-link-skills" data-key="nav_skills">Skills</a></li>
             </ul>
             <div class="nav-right">
                 <div class="lang-switch">
@@ -52,19 +56,19 @@
                 <p data-key="position">Senior Financial Analyst, Budgeting, Modeling & Risk Manager</p>
                 <p data-key="bio">Experienced specialist in financial analysis, budgeting, P&L, DCF, cost optimization. I turn data into strategic business decisions.</p>
                 <div class="header-buttons">
-                    <a href="#contacts" class="btn primary" data-key="contact_me">Contact Me</a>
-                    <a href="assets/cv/resume.pdf" download class="btn secondary">Download CV</a>
+                    <a href="assets/cv/resume.pdf" download class="btn btn-download" data-key="download_cv">Download CV</a>
                     <a href="#experience" class="btn secondary" data-key="view_experience">View Experience</a>
+                    <a href="https://wa.me/79623300289" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" data-key="whatsapp_me">WhatsApp</a>
                 </div>
                 <div class="social-icons">
-                    <a href="https://linkedin.com/in/roman-dikarev" class="icon linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
                     <a href="https://t.me/roman-dikarev" class="icon telegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/roman-dikarev" class="icon linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
                     </a>
                     <a href="mailto:roman@dikarev.ru" class="icon email" target="_blank" rel="noopener noreferrer" aria-label="Email">
@@ -85,7 +89,6 @@
             <div class="view-buttons-wrapper">
                 <button class="view-btn active" data-view="hr">HR Professional</button>
                 <button class="view-btn" data-view="finance">Finance Specialist</button>
-                <button class="view-btn" data-view="projects">Personal Projects</button>
             </div>
         </div>
     </section>
@@ -254,16 +257,6 @@
         </div>
     </section>
 
-    <!-- PERSONAL PROJECTS — новый раздел -->
-    <section class="personal-projects" id="projects-view" data-aos="fade-up">
-        <div class="container">
-            <h2 data-key="projects_title">Personal Projects</h2>
-            <div class="projects-grid">
-                <!-- Добавьте свои проекты здесь -->
-            </div>
-        </div>
-    </section>
-
     <!-- SKILLS -->
     <section class="skills" id="skills" data-aos="fade-up">
         <div class="container">
@@ -314,7 +307,7 @@
         </div>
     </section>
 
-    <footer id="contacts">
+    <footer>
         <div class="container">
             <p>© 2025 Dikarev Roman. All rights reserved.</p>
         </div>
