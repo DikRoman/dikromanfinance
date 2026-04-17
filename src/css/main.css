@@ -100,6 +100,28 @@ body {
     color: var(--blue-dark);
 }
 
+.nav-link-values {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--blue);
+    background: rgba(0, 51, 255, 0.15);
+    color: var(--accent);
+    font-weight: 600;
+}
+.nav-link-values:hover {
+    background: rgba(0, 51, 255, 0.28);
+    color: var(--accent);
+}
+.theme-light .nav-link-values {
+    border-color: var(--blue);
+    background: rgba(0, 51, 255, 0.1);
+    color: var(--blue);
+}
+.theme-light .nav-link-values:hover {
+    background: rgba(0, 51, 255, 0.18);
+    color: var(--blue-dark);
+}
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -168,6 +190,10 @@ body {
     font-size: 1.4rem;
     cursor: pointer;
 }
+
+/* Smooth anchor scrolling, compensate fixed navbar height */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 90px; }
 
 /* ====================== HEADER ====================== */
 .header {
