@@ -66,60 +66,79 @@ body {
 }
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 10px;
     list-style: none;
     align-items: center;
+    flex-wrap: wrap;
 }
 .nav-links a {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(219, 254, 2, 0.35);
+    background: rgba(219, 254, 2, 0.06);
     color: var(--text);
     text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-}
-.nav-links a:hover { color: var(--accent); }
-
-.nav-link-skills {
-    padding: 6px 16px;
-    border-radius: 999px;
-    border: 1px solid var(--accent);
-    background: rgba(219, 254, 2, 0.1);
-    color: var(--accent);
     font-weight: 600;
+    font-size: 0.92rem;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+.nav-links a:hover {
+    border-color: var(--accent);
+    background: rgba(219, 254, 2, 0.16);
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+.theme-light .nav-links a {
+    border-color: rgba(0, 51, 255, 0.3);
+    background: rgba(0, 51, 255, 0.05);
+    color: var(--text);
+}
+.theme-light .nav-links a:hover {
+    border-color: var(--blue);
+    background: rgba(0, 51, 255, 0.12);
+    color: var(--blue);
+}
+
+/* Emphasized capsule — Skills (accent/yellow) */
+.nav-link-skills {
+    border-color: var(--accent) !important;
+    background: rgba(219, 254, 2, 0.18) !important;
+    color: var(--accent) !important;
 }
 .nav-link-skills:hover {
-    background: rgba(219, 254, 2, 0.2);
-    color: var(--accent);
+    background: rgba(219, 254, 2, 0.28) !important;
+    color: var(--accent) !important;
 }
 .theme-light .nav-link-skills {
-    border-color: var(--blue);
-    background: rgba(0, 51, 255, 0.08);
-    color: var(--blue);
+    border-color: var(--blue) !important;
+    background: rgba(0, 51, 255, 0.1) !important;
+    color: var(--blue) !important;
 }
 .theme-light .nav-link-skills:hover {
-    background: rgba(0, 51, 255, 0.14);
-    color: var(--blue-dark);
+    background: rgba(0, 51, 255, 0.18) !important;
+    color: var(--blue-dark) !important;
 }
 
+/* Emphasized capsule — Values (blue) */
 .nav-link-values {
-    padding: 6px 16px;
-    border-radius: 999px;
-    border: 1px solid var(--blue);
-    background: rgba(0, 51, 255, 0.15);
-    color: var(--accent);
-    font-weight: 600;
+    border-color: var(--blue) !important;
+    background: rgba(0, 51, 255, 0.2) !important;
+    color: var(--accent) !important;
 }
 .nav-link-values:hover {
-    background: rgba(0, 51, 255, 0.28);
-    color: var(--accent);
+    background: rgba(0, 51, 255, 0.32) !important;
+    color: var(--accent) !important;
 }
 .theme-light .nav-link-values {
-    border-color: var(--blue);
-    background: rgba(0, 51, 255, 0.1);
-    color: var(--blue);
+    border-color: var(--blue) !important;
+    background: rgba(0, 51, 255, 0.12) !important;
+    color: var(--blue) !important;
 }
 .theme-light .nav-link-values:hover {
-    background: rgba(0, 51, 255, 0.18);
-    color: var(--blue-dark);
+    background: rgba(0, 51, 255, 0.2) !important;
+    color: var(--blue-dark) !important;
 }
 
 .nav-right {
@@ -128,9 +147,20 @@ body {
     gap: 20px;
 }
 
+@media (max-width: 960px) {
+    .nav-links {
+        gap: 6px;
+    }
+    .nav-links a {
+        padding: 5px 12px;
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-main {
         flex-wrap: wrap;
+        gap: 10px;
     }
     
     .logo {
@@ -138,8 +168,14 @@ body {
     }
     
     .nav-links {
-        gap: 16px;
-        font-size: 0.9rem;
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 6px;
+    }
+    .nav-links a {
+        padding: 4px 10px;
+        font-size: 0.8rem;
     }
     
     .nav-right {
@@ -159,16 +195,19 @@ body {
 @media (max-width: 480px) {
     .navbar-main {
         flex-direction: column;
-        gap: 12px;
+        align-items: flex-start;
+        gap: 10px;
     }
-    
+    .navbar-main > .logo { align-self: flex-start; }
     .nav-links {
         width: 100%;
-        justify-content: space-around;
-        gap: 8px;
-        font-size: 0.85rem;
+        justify-content: flex-start;
+        gap: 6px;
     }
-    
+    .nav-links a {
+        padding: 4px 10px;
+        font-size: 0.78rem;
+    }
     .nav-right {
         width: 100%;
         justify-content: center;
