@@ -208,11 +208,59 @@ body {
     margin-bottom: 12px;
     color: var(--accent);
 }
-.header-text p { font-size: 1.25rem; opacity: 0.9; margin-bottom: 24px; }
+.header-text p { font-size: 1.25rem; opacity: 0.9; margin-bottom: 20px; }
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding: 0;
+    margin: 4px 0 8px;
+    font-size: 0.98rem;
+    opacity: 0.9;
+}
+.contact-list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-list a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(219, 254, 2, 0.45);
+    transition: var(--transition);
+}
+.contact-list a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+.theme-light .contact-list a {
+    border-bottom-color: rgba(0, 51, 255, 0.35);
+}
+.theme-light .contact-list a:hover {
+    color: var(--blue);
+    border-bottom-color: var(--blue);
+}
+.contact-ico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(219, 254, 2, 0.14);
+    font-size: 0.9rem;
+    line-height: 1;
+}
+.theme-light .contact-ico {
+    background: rgba(0, 51, 255, 0.1);
+}
+
 .header-buttons {
     display: flex;
     gap: 16px;
-    margin: 32px 0;
+    margin: 20px 0 0;
     flex-wrap: wrap;
 }
 
@@ -514,11 +562,56 @@ body {
     border-bottom-color: rgba(0, 51, 255, 0.2);
     color: var(--blue);
 }
+.skills-subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text);
+    opacity: 0.8;
+    margin: 0 0 16px;
+}
+.skills-subtitle--ai {
+    color: var(--accent);
+    opacity: 1;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(219, 254, 2, 0.18), rgba(0, 51, 255, 0.18));
+    border: 1px solid rgba(219, 254, 2, 0.35);
+}
+.theme-light .skills-subtitle--ai {
+    color: var(--blue);
+    background: linear-gradient(90deg, rgba(0, 51, 255, 0.1), rgba(219, 254, 2, 0.15));
+    border-color: rgba(0, 51, 255, 0.3);
+}
+.skills-ai-group {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(219, 254, 2, 0.25);
+}
+.theme-light .skills-ai-group {
+    border-top-color: rgba(0, 51, 255, 0.2);
+}
+.skills-ai-note {
+    margin: 8px 0 16px;
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
 .skills-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    justify-content: center;
+    justify-content: flex-start;
+}
+.pill--ai {
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+    border: 1px solid rgba(219, 254, 2, 0.35);
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.3);
+}
+.pill--ai:hover {
+    background: linear-gradient(135deg, #6d28d9 0%, #1d4ed8 100%);
+    box-shadow: 0 12px 28px rgba(124, 58, 237, 0.45);
 }
 
 @media (max-width: 768px) {
@@ -598,10 +691,34 @@ body {
     gap: 32px;
     margin-top: 24px;
 }
-.exp-period { font-size: 0.9rem; opacity: 0.8; margin-bottom: 8px; }
-.exp-position { font-weight: 600; margin-bottom: 12px; color: var(--accent); }
+.exp-period { font-size: 0.9rem; opacity: 0.8; margin-bottom: 6px; }
+.exp-position { font-weight: 600; margin-bottom: 8px; color: var(--accent); }
+.exp-company-desc {
+    font-size: 0.88rem;
+    opacity: 0.75;
+    font-style: italic;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+}
+.theme-light .exp-company-desc {
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+.exp-section-title {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    opacity: 0.85;
+}
+.theme-light .exp-section-title {
+    color: var(--blue);
+}
 .exp-list { list-style: disc inside; font-size: 0.95rem; }
-.exp-list li { margin-bottom: 8px; }
+.exp-list li { margin-bottom: 6px; }
 
 @media (max-width: 992px) {
     .experience-grid { grid-template-columns: 1fr; }
