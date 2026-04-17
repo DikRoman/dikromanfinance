@@ -1186,186 +1186,122 @@ footer {
     z-index: 10;
 }
 
-/* ====================== ANIMATED PROJECTS/SKILLS BLOCK ====================== */
-.animated-projects {
+/* ====================== KEY PROJECTS & EXPERTISE — tiles ====================== */
+.key-projects {
     padding: 48px 0;
-    overflow: hidden;
 }
-
-.animated-projects h2 {
+.key-projects h2 {
     font-size: 2rem;
     color: var(--accent);
     margin-bottom: 24px;
     text-align: left;
 }
+.theme-light .key-projects h2 { color: var(--blue); }
 
-@media (max-width: 768px) {
-    .animated-projects {
-        padding: 36px 0;
-    }
-    
-    .animated-projects h2 {
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-    }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
-@media (max-width: 480px) {
-    .animated-projects {
-        padding: 24px 0;
-    }
-    
-    .animated-projects h2 {
-        font-size: 1.4rem;
-        margin-bottom: 16px;
-    }
-}
-
-.animated-cards-container {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+.project-tile {
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.animated-cards-wrapper {
-    display: flex;
-    gap: 32px;
-    animation: scroll-left 30s linear infinite;
-    will-change: transform;
-}
-
-.animated-card {
     background: var(--card);
-    border: 2px solid var(--accent);
+    border: 1px solid rgba(219, 254, 2, 0.22);
     border-radius: var(--radius);
-    padding: 40px 32px;
-    min-width: 360px;
-    width: 360px;
-    min-height: 200px;
-    flex-shrink: 0;
-    text-align: center;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
+    padding: 28px 24px;
+    min-height: 170px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
 }
-
-.animated-card::before {
+.project-tile::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(219, 254, 2, 0.1), transparent);
-    animation: shine 4s infinite;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(219, 254, 2, 0.06) 0%, rgba(0, 51, 255, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+.project-tile::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(219, 254, 2, 0.18) 0%, transparent 70%);
+    pointer-events: none;
 }
-
-@keyframes shine {
-    0% {
-        transform: translateX(-100%) translateY(-100%) rotate(45deg);
-    }
-    100% {
-        transform: translateX(100%) translateY(100%) rotate(45deg);
-    }
+.theme-light .project-tile {
+    background: #ffffff;
+    border-color: rgba(0, 51, 255, 0.18);
+    box-shadow: 0 8px 20px rgba(0, 51, 255, 0.08);
 }
-
-.animated-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 20px 50px rgba(219, 254, 2, 0.4);
+.project-tile:hover {
+    transform: translateY(-6px);
     border-color: var(--accent);
-    z-index: 10;
+    box-shadow: 0 20px 40px rgba(219, 254, 2, 0.22);
 }
-
-.card-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
-    filter: drop-shadow(0 4px 8px rgba(219, 254, 2, 0.3));
+.project-tile:hover::before {
+    opacity: 1;
 }
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
+.project-tile__icon {
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+    filter: drop-shadow(0 4px 10px rgba(219, 254, 2, 0.3));
+    position: relative;
+    z-index: 1;
 }
-
-.animated-card h3 {
-    font-size: 1.5rem;
+.project-tile h3 {
+    font-size: 1.1rem;
     color: var(--accent);
-    margin-bottom: 8px;
+    margin: 0;
     font-weight: 700;
+    position: relative;
+    z-index: 1;
 }
-
-.animated-card p {
-    font-size: 0.95rem;
+.theme-light .project-tile h3 { color: var(--blue); }
+.project-tile p {
+    font-size: 0.9rem;
     opacity: 0.8;
     margin: 0;
+    position: relative;
+    z-index: 1;
 }
 
-/* Адаптивность анимированных карточек */
 @media (max-width: 768px) {
-    .animated-cards-wrapper {
-        gap: 20px;
+    .key-projects { padding: 36px 0; }
+    .key-projects h2 { font-size: 1.6rem; margin-bottom: 20px; }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 14px;
     }
-    
-    .animated-card {
-        min-width: 280px;
-        width: 280px;
-        min-height: 160px;
-        padding: 32px 24px;
+    .project-tile {
+        padding: 22px 18px;
+        min-height: 150px;
     }
-    
-    .card-icon {
-        font-size: 2.5rem;
-    }
-    
-    .animated-card h3 {
-        font-size: 1.2rem;
-    }
+    .project-tile__icon { font-size: 1.9rem; }
+    .project-tile h3 { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
-    .animated-cards-wrapper {
-        gap: 16px;
+    .key-projects { padding: 24px 0; }
+    .key-projects h2 { font-size: 1.4rem; margin-bottom: 16px; }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
-    
-    .animated-card {
-        min-width: 240px;
-        width: 240px;
-        min-height: 140px;
-        padding: 24px 16px;
+    .project-tile {
+        padding: 18px 14px;
+        min-height: 130px;
     }
-    
-    .card-icon {
-        font-size: 2rem;
-        margin-bottom: 12px;
-    }
-    
-    .animated-card h3 {
-        font-size: 1.1rem;
-    }
-    
-    .animated-card p {
-        font-size: 0.85rem;
-    }
+    .project-tile__icon { font-size: 1.7rem; }
+    .project-tile h3 { font-size: 0.95rem; }
+    .project-tile p { font-size: 0.82rem; }
 }
