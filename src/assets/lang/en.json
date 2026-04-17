@@ -1,11 +1,8 @@
 {
   "name": "Roman Dikarev",
-  "top_notice": "Open to discussing opportunities",
-  "greeting": "Hi, I'm Roman Dikarev",
-  "position": "Senior Financial Analyst · Budgeting, Modeling & Risk Management",
-  "bio": "Finance specialist with experience in analytics, budgeting and management accounting. Started in Big-4 audit consulting, continued as a financial analyst at an international logistics company, then moved into IT and grew to Head of Finance & Analytics at PIK-Digital. Led budgeting, financial control, management reporting and analytics.",
+  "greeting": "Roman Dikarev",
+  "position": "Senior Financial Analyst · Budgeting, Modeling, Risk Management",
 
-  "contact_city": "Moscow",
   "contact_me": "Contact Me",
   "download_cv": "Download CV",
   "whatsapp_me": "Message on WhatsApp",
@@ -24,6 +21,20 @@
 
   "responsibilities": "Responsibilities",
   "achievements": "Achievements",
+
+  "values_title": "What I'm Looking For & My Values",
+  "looking_for_title": "What I'm Looking For",
+  "looking_for_1": "A role at the intersection of Finance and IT with real impact on decisions",
+  "looking_for_2": "Budgeting and management reporting for large portfolios",
+  "looking_for_3": "A team that values automation and data quality",
+  "looking_for_4": "Opportunity to bring AI and analytics into finance processes",
+  "looking_for_5": "Clear goals, direct dialogue with CFO/CEO and accountability for results",
+  "values_list_title": "My Values",
+  "values_1": "Decisions driven by data, not emotions",
+  "values_2": "Honest numbers and transparent processes",
+  "values_3": "\"Done better\" beats \"done faster\"",
+  "values_4": "Respect for the team's and stakeholders' time",
+  "values_5": "Continuous learning — ACCA, AI tools, new markets",
 
   "skills_title": "Skills",
   "skills_tools_title": "Tools & Technical skills",
