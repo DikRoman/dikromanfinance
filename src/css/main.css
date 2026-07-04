@@ -1043,8 +1043,8 @@ section[id] { scroll-margin-top: 80px; }
 .cert-carousel__viewport {
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    scroll-behavior: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     padding: 8px 4px 16px;
@@ -1075,6 +1075,11 @@ section[id] { scroll-margin-top: 80px; }
 .cert-carousel__btn:disabled {
     opacity: 0.35;
     cursor: default;
+}
+.cert-carousel__btn--prev,
+.cert-carousel__btn--next {
+    opacity: 1;
+    cursor: pointer;
 }
 .cert-carousel__fade {
     position: absolute;

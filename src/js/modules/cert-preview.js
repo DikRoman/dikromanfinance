@@ -5,7 +5,7 @@ export function initCertPreview() {
     const body = modal.querySelector('.cert-modal__body');
     const closeBtn = modal.querySelector('.cert-modal__close');
     const backdrop = modal.querySelector('.cert-modal__backdrop');
-    const cards = document.querySelectorAll('.cert-card[data-cert-src]');
+    const cards = document.querySelectorAll('.cert-card[data-cert-src]:not([aria-hidden="true"])');
 
     const close = () => {
         modal.hidden = true;
