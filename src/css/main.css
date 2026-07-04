@@ -656,17 +656,17 @@ section[id] { scroll-margin-top: 80px; }
 }
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 20px;
-    align-items: start;
+    align-items: stretch;
 }
 .tool-card {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
-    padding: 28px 14px 22px;
+    gap: 12px;
+    padding: 24px 10px 0;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -675,6 +675,7 @@ section[id] { scroll-margin-top: 80px; }
     cursor: default;
     outline: none;
     overflow: hidden;
+    min-height: 148px;
 }
 .tool-card:hover,
 .tool-card:focus-within {
@@ -684,45 +685,50 @@ section[id] { scroll-margin-top: 80px; }
     z-index: 5;
 }
 .tool-desc {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 14px 12px;
-    font-size: 0.76rem;
-    line-height: 1.5;
+    width: 100%;
+    margin: auto 0 0;
+    padding: 0 10px;
+    font-size: 0.68rem;
+    line-height: 1.45;
     color: #fff;
     background: linear-gradient(180deg, rgba(255, 87, 34, 0.97) 0%, rgba(230, 74, 25, 0.98) 100%);
     border-radius: 0 0 var(--radius) var(--radius);
-    transform: translateY(calc(100% - 6px));
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+    max-height: 0;
     opacity: 0;
-    pointer-events: none;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.35s ease;
 }
 .tool-card:hover .tool-desc,
 .tool-card:focus-within .tool-desc {
-    transform: translateY(0);
+    max-height: 220px;
     opacity: 1;
+    padding: 12px 10px 14px;
 }
 .tool-icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 16px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
 .tool-icon svg {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
 }
 .tool-name {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--text);
-    line-height: 1.2;
+    line-height: 1.25;
+    padding: 0 4px 12px;
 }
 /* Brand colors */
 .tool-icon--claude {
@@ -753,19 +759,26 @@ section[id] { scroll-margin-top: 80px; }
 
 @media (max-width: 992px) {
     .tools-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+    .tool-desc { font-size: 0.72rem; }
 }
 @media (max-width: 560px) {
     .tools { padding: 40px 0; }
     .tools-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
     }
-    .tool-card { padding: 22px 12px 18px; }
-    .tool-icon { width: 56px; height: 56px; border-radius: 14px; }
-    .tool-icon svg { width: 30px; height: 30px; }
-    .tool-name { font-size: 0.82rem; }
+    .tool-card { min-height: 136px; padding-top: 20px; }
+    .tool-icon { width: 50px; height: 50px; border-radius: 12px; }
+    .tool-icon svg { width: 28px; height: 28px; }
+    .tool-name { font-size: 0.8rem; padding-bottom: 10px; }
+    .tool-desc { font-size: 0.7rem; line-height: 1.42; }
+    .tool-card:hover .tool-desc,
+    .tool-card:focus-within .tool-desc {
+        max-height: 260px;
+        padding: 10px 8px 12px;
+    }
 }
 
 /* ====================== SKILLS ====================== */
