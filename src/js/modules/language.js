@@ -33,6 +33,13 @@ export function initLanguage() {
             }
         });
 
+        document.querySelectorAll('[data-key-aria]').forEach(element => {
+            const key = element.getAttribute('data-key-aria');
+            if (translations[key]) {
+                element.setAttribute('aria-label', translations[key]);
+            }
+        });
+
         // Обновляем атрибут lang у html
         document.documentElement.lang = currentLang;
     }

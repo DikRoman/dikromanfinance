@@ -1035,22 +1035,61 @@ section[id] { scroll-margin-top: 80px; }
 .cert-carousel {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+.cert-carousel__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 8px 4px 16px;
+}
+.cert-carousel__viewport::-webkit-scrollbar {
+    display: none;
+}
+.cert-carousel__btn {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 87, 34, 0.45);
+    background: var(--card);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 3;
+}
+.cert-carousel__btn:hover:not(:disabled) {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 8px 24px var(--accent-glow);
+}
+.cert-carousel__btn:disabled {
+    opacity: 0.35;
+    cursor: default;
 }
 .cert-carousel__fade {
     position: absolute;
     top: 0;
-    bottom: 0;
-    width: 80px;
+    bottom: 16px;
+    width: 56px;
     pointer-events: none;
     z-index: 2;
 }
 .cert-carousel__fade--left {
-    left: 0;
+    left: 52px;
     background: linear-gradient(90deg, var(--bg) 0%, rgba(15, 15, 26, 0) 100%);
 }
 .cert-carousel__fade--right {
-    right: 0;
+    right: 52px;
     background: linear-gradient(270deg, var(--bg) 0%, rgba(15, 15, 26, 0) 100%);
 }
 .theme-light .cert-carousel__fade--left {
@@ -1063,17 +1102,9 @@ section[id] { scroll-margin-top: 80px; }
     display: flex;
     gap: 24px;
     width: max-content;
-    animation: cert-scroll 40s linear infinite;
-    will-change: transform;
-}
-.cert-carousel:hover .cert-track {
-    animation-play-state: paused;
-}
-@keyframes cert-scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
 }
 .cert-card {
+    scroll-snap-align: start;
     flex: 0 0 auto;
     width: 300px;
     min-height: 220px;
@@ -1250,7 +1281,13 @@ body.cert-modal-open {
 }
 
 @media (max-width: 768px) {
+    .certificates { padding: 36px 0; }
     .certificates h2 { font-size: 1.7rem; }
+    .cert-carousel { gap: 8px; }
+    .cert-carousel__btn { width: 38px; height: 38px; }
+    .cert-carousel__fade { width: 32px; }
+    .cert-carousel__fade--left { left: 44px; }
+    .cert-carousel__fade--right { right: 44px; }
     .cert-card { width: 260px; min-height: 200px; padding: 18px; }
     .cert-thumb { height: 78px; font-size: 2rem; }
     .cert-title { font-size: 1.05rem; }

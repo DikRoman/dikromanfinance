@@ -37,7 +37,7 @@
                 <li><a href="#experience" data-key="nav_experience">Experience</a></li>
                 <li><a href="#tools" data-key="nav_tools">Tools</a></li>
                 <li><a href="#skills" data-key="nav_skills">Skills</a></li>
-                <li><a href="#certificates" data-key="nav_certificates">Certificates</a></li>
+                <li><a href="#certificates" data-key="nav_certificates">Доп. образование</a></li>
                 <li><a href="#education" data-key="nav_education">Education</a></li>
                 <li><a href="#values" data-key="nav_values">Values</a></li>
             </ul>
@@ -346,17 +346,19 @@
         </div>
     </section>
 
-    <!-- CERTIFICATES — carousel -->
+    <!-- ADDITIONAL EDUCATION — carousel -->
     <section class="certificates" id="certificates" data-aos="fade-up">
         <div class="container">
             <div class="cert-header">
-                <h2 class="section-title" data-key="certificates_title">Сертификаты</h2>
-                <p class="cert-note" data-key="certificates_note">Нажмите на карточку, чтобы открыть сертификат</p>
+                <h2 class="section-title" data-key="certificates_title">Дополнительное <span class="text-accent">образование</span></h2>
+                <p class="cert-note" data-key="certificates_note">Нажмите на карточку, чтобы открыть сертификат. Листайте стрелками или свайпом.</p>
             </div>
             <div class="cert-carousel">
-                <div class="cert-carousel__fade cert-carousel__fade--left" aria-hidden="true"></div>
-                <div class="cert-carousel__fade cert-carousel__fade--right" aria-hidden="true"></div>
-                <div class="cert-track">
+                <button type="button" class="cert-carousel__btn cert-carousel__btn--prev" aria-label="Назад" data-key-aria="cert_carousel_prev">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+                </button>
+                <div class="cert-carousel__viewport">
+                    <div class="cert-track">
                     <article class="cert-card cert-card--clickable" tabindex="0" role="button" data-cert-type="image" data-cert-src="assets/certificates/files/acca-fa.jpg" data-cert-title="ACCA Financial Accounting">
                         <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/acca-fa.jpg" alt="ACCA"></div>
                         <div class="cert-body">
@@ -397,49 +399,13 @@
                             <p class="cert-issuer" data-key="cert_pk_issuer">Moscow Business Academy</p>
                         </div>
                     </article>
-
-                    <!-- duplicated for seamless loop -->
-                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="image" data-cert-src="assets/certificates/files/acca-fa.jpg" data-cert-title="ACCA Financial Accounting">
-                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/acca-fa.jpg" alt=""></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2019</p>
-                            <h3 class="cert-title" data-key="cert_acca_title">ACCA · Financial Accounting</h3>
-                            <p class="cert-issuer" data-key="cert_acca_issuer">Voronezh State University · 71%</p>
-                        </div>
-                    </article>
-                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/yandex-data-analyst.pdf" data-cert-title="Yandex Practicum Data Analyst">
-                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/yandex-data-analyst.png" alt=""></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2022</p>
-                            <h3 class="cert-title" data-key="cert_yandex_title">Аналитик данных</h3>
-                            <p class="cert-issuer" data-key="cert_yandex_issuer">Яндекс Практикум</p>
-                        </div>
-                    </article>
-                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/learndb-sql.pdf" data-cert-title="LearnDB SQL">
-                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/learndb-sql.png" alt=""></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2022</p>
-                            <h3 class="cert-title" data-key="cert_sql_title">SQL</h3>
-                            <p class="cert-issuer" data-key="cert_sql_issuer">LearnDB</p>
-                        </div>
-                    </article>
-                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/coursera.pdf" data-cert-title="Coursera Python">
-                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/coursera.png" alt=""></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2020</p>
-                            <h3 class="cert-title" data-key="cert_coursera_title">Python · Coursera</h3>
-                            <p class="cert-issuer" data-key="cert_coursera_issuer">University of Michigan</p>
-                        </div>
-                    </article>
-                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/professional-training.pdf" data-cert-title="Project Office Manager">
-                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/professional-training.png" alt=""></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2026</p>
-                            <h3 class="cert-title" data-key="cert_pk_title">Руководитель проектного офиса</h3>
-                            <p class="cert-issuer" data-key="cert_pk_issuer">Moscow Business Academy</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
+                <button type="button" class="cert-carousel__btn cert-carousel__btn--next" aria-label="Вперёд" data-key-aria="cert_carousel_next">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+                </button>
+                <div class="cert-carousel__fade cert-carousel__fade--left" aria-hidden="true"></div>
+                <div class="cert-carousel__fade cert-carousel__fade--right" aria-hidden="true"></div>
             </div>
         </div>
     </section>

@@ -1,11 +1,13 @@
 import { initLanguage } from './modules/language.js';
 import { initScrollAnimations } from './modules/scroll-anim.js';
 import { initCertPreview } from './modules/cert-preview.js';
+import { initCertCarousel } from './modules/cert-carousel.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initLanguage();
     initScrollAnimations();
     initCertPreview();
+    initCertCarousel();
 
     // === Theme switcher (optional — button removed from UI) ===
     const themeToggle = document.querySelector('.theme-toggle');
