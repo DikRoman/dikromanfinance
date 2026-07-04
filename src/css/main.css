@@ -837,8 +837,8 @@ section[id] { scroll-margin-top: 80px; }
 .skills-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    justify-content: flex-start;
+    gap: 10px;
+    justify-content: center;
 }
 .pill--ai {
     background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
@@ -869,8 +869,8 @@ section[id] { scroll-margin-top: 80px; }
     }
 
     .pill {
-        padding: 8px 18px;
-        font-size: 0.9rem;
+        padding: 6px 12px;
+        font-size: 0.78rem;
     }
 }
 
@@ -892,14 +892,15 @@ section[id] { scroll-margin-top: 80px; }
 .pill {
     background: var(--accent);
     color: #fff;
-    padding: 10px 22px;
+    padding: 7px 14px;
     border-radius: 50px;
+    font-size: 0.82rem;
     font-weight: 500;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    line-height: 1.2;
+    gap: 6px;
+    line-height: 1.25;
 }
 .pill:hover {
     background: var(--accent-dark);
@@ -1468,7 +1469,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .key-projects { padding: 36px 0; }
+    .key-projects { padding: 28px 0; }
     .key-projects h2 { font-size: 1.6rem; margin-bottom: 20px; }
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
