@@ -1,10 +1,9 @@
 {
   "name": "Roman Dikarev",
   "logo_rest": "ikarev Roman",
-  "hero_hello": "HELLO!",
   "greeting": "Hi, I'm <span class=\"text-accent\">Roman Dikarev</span>",
-  "position": "Senior Financial Analyst",
-  "hero_desc": "Finance specialist with Big-4, IT and logistics experience. Budgeting, analytics, reporting automation and management accounting.",
+  "position": "Finance. Forecasting. Models.",
+  "hero_desc": "Finance specialist with 8+ years of experience — from Big-4 audit to multi-billion CAPEX planning at Russia's largest marketplace. In recent years — forecasting, budgeting and modeling in IT infrastructure at companies such as PIK and Wildberries.",
 
   "contact_me": "Contact Me",
   "download_cv": "Download CV",
