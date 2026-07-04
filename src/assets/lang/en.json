@@ -91,14 +91,6 @@
   "wbtech_desc": "IT division of Wildberries — the largest online marketplace in Russia and CIS",
   "wbtech_d1": "Description coming soon — send me the text and I'll drop it in here",
 
-  "sibur_company": "SIBUR / BIAXPLEN",
-  "position_sibur": "Manager-Economist",
-  "sibur_desc": "Leader of Russia's petrochemical industry, the largest BOPP-film producer",
-  "sibur1": "Updated the import-parity model with China with the team, surfaced hidden costs and justified the attractiveness of internal procurement",
-  "sibur2": "Analyzed pricing formula, identified up to ₽30M annual revenue loss",
-  "sibur3": "Using 4 years of production stats, calculated optimal batch size to reduce downtime and SKU-switch losses",
-  "sibur4": "Prepared a 60-slide polyethylene study (types, feedstock, plants, outlook) to quickly onboard leadership into the product and market",
-
   "pik_company": "PIK-Digital",
   "position_pik": "Head of Finance & Analytics ← Financial Analyst",
   "pik_desc": "In-house IT integrator of the PIK development group",
@@ -141,7 +133,7 @@
   "forward_company": "Forward",
   "position_forward": "Consultant-Analyst",
   "forward_desc": "1C franchise — implementation and support of accounting systems",
-  "forward_d1": "IT support for a large oil & gas company",
+  "forward_d1": "IT support for a large corporate client",
   "forward_d2": "Writing specs for developers and testing customizations",
   "forward_d3": "Modeling business processes (as-is & to-be)",
 
