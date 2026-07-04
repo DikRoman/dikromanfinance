@@ -66,7 +66,7 @@
   "animated_projects_title": "<span class=\"text-accent\">Portfolio</span>",
 
   "tools_title": "Tools I <span class=\"text-accent\">Use</span>",
-  "tools_note": "Daily stack — from AI assistants to spreadsheets and presentations",
+  "tools_note": "From AI assistants to spreadsheets",
   "tool_claude_desc": "Data analysis, report and methodology drafts. For complex analytics and structuring conclusions.",
   "tool_gemini_desc": "Quick lookups and comparing approaches. For market research and a second opinion on models.",
   "tool_cursor_desc": "Python scripts, dashboard prototypes and FP&A tools without a long development cycle.",
