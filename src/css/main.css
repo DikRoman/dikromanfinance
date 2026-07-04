@@ -679,7 +679,7 @@ section[id] { scroll-margin-top: 80px; }
     cursor: default;
     outline: none;
     overflow: hidden;
-    min-height: 88px;
+    min-height: 108px;
 }
 .tool-card:hover,
 .tool-card:focus-within {
@@ -722,6 +722,21 @@ section[id] { scroll-margin-top: 80px; }
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+.tool-icon--logo {
+    background: #ffffff;
+    padding: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+.theme-light .tool-icon--logo {
+    background: #f5f5f7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.tool-icon--logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 .tool-icon svg {
     width: 32px;
@@ -1018,7 +1033,7 @@ section[id] { scroll-margin-top: 80px; }
 
 @media (max-width: 992px) {
     .experience-grid { grid-template-columns: 1fr; gap: 28px; }
-    .experience-grid .exp-card { padding: 28px; }
+    .experience-grid .exp-card { padding: 22px 24px; }
 }
 /* ====================== CERTIFICATES CAROUSEL ====================== */
 .certificates {
@@ -1349,7 +1364,7 @@ footer {
 /* Тень для карточек опыта */
 .experience-grid .exp-card {
     margin-bottom: 0;
-    padding: 36px 40px;
+    padding: 28px 32px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 0 25px rgba(255, 87, 34,0.2), 0 0 45px rgba(255, 87, 34,0.15);
     transition: var(--transition);
 }
