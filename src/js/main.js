@@ -6,19 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
     initLanguage();
     initScrollAnimations();
 
-    // === Theme switcher ===
+    // === Theme switcher (optional — button removed from UI) ===
     const themeToggle = document.querySelector('.theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-    document.body.classList.add(`theme-${currentTheme}`);
-    themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
-
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('theme-dark');
-        document.body.classList.toggle('theme-light');
-        const isDark = document.body.classList.contains('theme-dark');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        themeToggle.textContent = isDark ? '☀️' : '🌙';
-    });
+    if (themeToggle) {
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        document.body.classList.add(`theme-${currentTheme}`);
+        themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('theme-dark');
+            document.body.classList.toggle('theme-light');
+            const isDark = document.body.classList.contains('theme-dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            themeToggle.textContent = isDark ? '☀️' : '🌙';
+        });
+    }
 
     // === View buttons switcher (HR / Finance) ===
     const viewButtons = document.querySelectorAll('.view-btn');

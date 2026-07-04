@@ -1,19 +1,22 @@
 {
   "name": "Роман Дикарев",
-  "greeting": "Роман Дикарев",
-  "position": "Старший финансовый аналитик · бюджетирование, моделирование, риск-менеджмент",
+  "logo_rest": "ikarev Roman",
+  "hero_hello": "HELLO!",
+  "greeting": "Привет, я <span class=\"text-accent\">Роман Дикарев</span>",
+  "position": "Старший финансовый аналитик",
+  "hero_desc": "Финансовый специалист с опытом в Big-4, IT и логистике. Бюджетирование, аналитика, автоматизация отчётности и управленческий учёт.",
 
   "contact_me": "Связаться",
   "download_cv": "Скачать CV",
   "whatsapp_me": "Написать в WhatsApp",
   "view_experience": "Опыт работы",
 
-  "portfolio_as": "Смотрите как:",
-  "summary_title": "Профессиональное резюме",
+  "portfolio_as": "Смотрите <span class=\"text-accent\">как</span>",
+  "summary_title": "Профессиональное <span class=\"text-accent\">резюме</span>",
   "hr_summary": "Финансовый лидер с опытом управления командой (до 5 человек) и бюджетированием крупных ИТ-портфелей. Сократил расходы компании более чем на 10%, автоматизировал отчётность (–30% времени), повысил точность учёта затрат с 70% до 95%, разработал методологию оценки санкционных рисков и обеспечил своевременный переход с зарубежного ПО. Завершил более 30 аудиторских проектов в 15+ отраслях в Big-4. ACCA — в процессе получения.",
   "finance_summary": "Технический финансовый аналитик с экспертизой в моделировании, P&L-анализе, управленческой отчётности и автоматизации процессов. Работаю с MS Excel (Power Query, PivotTable), Power BI, 1С, SQL, Python, Google Sheets + Yandex DataLens, think-cell, Visio. Поддерживал инвестиционные модели, автоматизировал консолидацию на Python, запускал дашборды для FP&A и топ-менеджмента. Активно использую AI-инструменты (ChatGPT, Claude, Cursor) для ускорения анализа и автоматизации.",
 
-  "experience_title": "Опыт работы",
+  "experience_title": "Опыт <span class=\"text-accent\">работы</span>",
   "nav_home": "Главная",
   "nav_experience": "Опыт",
   "nav_projects": "Проекты",
@@ -22,7 +25,7 @@
   "nav_education": "Образование",
   "nav_values": "Ценности",
 
-  "certificates_title": "Сертификаты",
+  "certificates_title": "<span class=\"text-accent\">Сертификаты</span>",
   "certificates_note": "Профессиональные сертификаты и обучение. Файлы подгружаются — скоро появятся в высоком качестве.",
   "cert_acca_title": "ACCA",
   "cert_acca_issuer": "Voronezh State University · в процессе",
@@ -41,7 +44,7 @@
   "responsibilities": "Обязанности",
   "achievements": "Достижения",
 
-  "values_title": "Что я ищу и мои ценности",
+  "values_title": "Что я ищу и <span class=\"text-accent\">мои ценности</span>",
   "looking_for_title": "Что я ищу в новой роли",
   "looking_for_1": "Роль на стыке финансов и IT с прямым влиянием на решения",
   "looking_for_2": "Бюджетирование и управленческая отчётность крупных портфелей",
@@ -55,12 +58,12 @@
   "values_4": "Уважение к времени команды и стейкхолдеров",
   "values_5": "Постоянное обучение — ACCA, AI-инструменты, новые рынки",
 
-  "skills_title": "Навыки",
+  "skills_title": "Мои <span class=\"text-accent\">навыки</span>",
   "skills_tools_title": "Инструменты и технические навыки",
   "skills_ai_title": "AI-инструменты",
   "skills_ai_note": "Использую в повседневной работе для ускорения анализа, подготовки отчётности и автоматизации.",
 
-  "animated_projects_title": "Ключевые проекты и экспертиза",
+  "animated_projects_title": "Ключевые проекты и <span class=\"text-accent\">экспертиза</span>",
   "project_budget": "Бюджет",
   "project_budget_desc": "Бюджетирование и планирование",
   "project_finmodel": "Финмодель",
@@ -134,9 +137,9 @@
   "forward_d2": "Постановка ТЗ программистам-разработчикам, тестирование доработок",
   "forward_d3": "Моделирование бизнес-процессов (as is & to be)",
 
-  "education_title": "Образование",
+  "education_title": "<span class=\"text-accent\">Образование</span>",
   "education_text": "2016 — РЭУ им. Г.В. Плеханова<br>Экономический факультет, специальность «Финансы и кредит»",
 
-  "additional_title": "Дополнительная информация",
+  "additional_title": "Дополнительная <span class=\"text-accent\">информация</span>",
   "additional_text": "<strong>Языки:</strong> английский — B1<br><br><strong>Сертификаты и тренинги:</strong><br>• 2019 — ACCA, Voronezh State University (в процессе получения)<br>• 2022 — Аналитик данных, Яндекс.Практикум<br>• 2022 — SQL, LearnDB<br><br><strong>Интересы:</strong> финансовые рынки, инвестиции, автоматизация процессов, профессиональная литература (Corporate Finance, Valuation), бег и шахматы."
 }

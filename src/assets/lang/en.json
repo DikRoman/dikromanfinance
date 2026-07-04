@@ -1,19 +1,22 @@
 {
   "name": "Roman Dikarev",
-  "greeting": "Roman Dikarev",
-  "position": "Senior Financial Analyst · Budgeting, Modeling, Risk Management",
+  "logo_rest": "ikarev Roman",
+  "hero_hello": "HELLO!",
+  "greeting": "Hi, I'm <span class=\"text-accent\">Roman Dikarev</span>",
+  "position": "Senior Financial Analyst",
+  "hero_desc": "Finance specialist with Big-4, IT and logistics experience. Budgeting, analytics, reporting automation and management accounting.",
 
   "contact_me": "Contact Me",
   "download_cv": "Download CV",
   "whatsapp_me": "Message on WhatsApp",
   "view_experience": "View Experience",
 
-  "portfolio_as": "View My Portfolio As",
-  "summary_title": "Professional Summary",
+  "portfolio_as": "View My Portfolio <span class=\"text-accent\">As</span>",
+  "summary_title": "Professional <span class=\"text-accent\">Summary</span>",
   "hr_summary": "Finance leader with team management experience (up to 5 people) and IT-portfolio budgeting. Cut company costs by 10%+, automated reporting (–30% time), improved cost accounting accuracy from 70% to 95%, built a sanction-risk assessment methodology and led a timely migration off restricted foreign software. Completed 30+ audit projects across 15+ industries in Big-4. ACCA — in progress.",
   "finance_summary": "Technical financial analyst with deep expertise in modeling, P&L analysis, management reporting and process automation. Tooling: MS Excel (Power Query, PivotTable), Power BI, 1C, SQL, Python, Google Sheets + Yandex DataLens, think-cell, Visio. Supported investment models, automated consolidation in Python, built dashboards for FP&A and top-management. Actively uses AI tools (ChatGPT, Claude, Cursor) to speed up analysis and automation.",
 
-  "experience_title": "Work Experience",
+  "experience_title": "Work <span class=\"text-accent\">Experience</span>",
   "nav_home": "Home",
   "nav_experience": "Experience",
   "nav_projects": "Personal Projects",
@@ -22,7 +25,7 @@
   "nav_education": "Education",
   "nav_values": "Values",
 
-  "certificates_title": "Certificates",
+  "certificates_title": "<span class=\"text-accent\">Certificates</span>",
   "certificates_note": "Professional certificates and training. Files are being uploaded — full-quality versions coming soon.",
   "cert_acca_title": "ACCA",
   "cert_acca_issuer": "Voronezh State University · in progress",
@@ -41,7 +44,7 @@
   "responsibilities": "Responsibilities",
   "achievements": "Achievements",
 
-  "values_title": "What I'm Looking For & My Values",
+  "values_title": "What I'm Looking For & <span class=\"text-accent\">My Values</span>",
   "looking_for_title": "What I'm Looking For",
   "looking_for_1": "A role at the intersection of Finance and IT with real impact on decisions",
   "looking_for_2": "Budgeting and management reporting for large portfolios",
@@ -55,12 +58,12 @@
   "values_4": "Respect for the team's and stakeholders' time",
   "values_5": "Continuous learning — ACCA, AI tools, new markets",
 
-  "skills_title": "Skills",
+  "skills_title": "My <span class=\"text-accent\">Skills</span>",
   "skills_tools_title": "Tools & Technical skills",
   "skills_ai_title": "AI tools",
   "skills_ai_note": "Used daily to speed up analysis, reporting and automation.",
 
-  "animated_projects_title": "Key Projects & Expertise",
+  "animated_projects_title": "Key Projects & <span class=\"text-accent\">Expertise</span>",
   "project_budget": "Budget",
   "project_budget_desc": "Budgeting & Planning",
   "project_finmodel": "FinModel",
@@ -134,9 +137,9 @@
   "forward_d2": "Writing specs for developers and testing customizations",
   "forward_d3": "Modeling business processes (as-is & to-be)",
 
-  "education_title": "Education",
+  "education_title": "<span class=\"text-accent\">Education</span>",
   "education_text": "2016 — Plekhanov Russian University of Economics<br>Faculty of Economics, specialization \"Finance and Credit\"",
 
-  "additional_title": "Additional Information",
+  "additional_title": "Additional <span class=\"text-accent\">Information</span>",
   "additional_text": "<strong>Languages:</strong> English — B1<br><br><strong>Certificates & training:</strong><br>• 2019 — ACCA, Voronezh State University (in progress)<br>• 2022 — Data Analyst, Yandex Practicum<br>• 2022 — SQL, LearnDB<br><br><strong>Interests:</strong> financial markets, investing, process automation, professional literature (Corporate Finance, Valuation), running and chess."
 }

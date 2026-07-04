@@ -22,27 +22,29 @@
 
     <title>Dikarev Roman | Senior Financial Analyst</title>
     <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="theme-dark">
     <nav class="navbar">
         <div class="container navbar-main">
-            <a class="logo" data-key="name">Dikarev Roman</a>
+            <a class="logo" href="#home"><span class="logo-accent">D</span><span data-key="logo_rest">ikarev Roman</span></a>
             <ul class="nav-links">
-                <li><a href="#home" data-key="nav_home">Home</a></li>
+                <li><a href="#home" class="nav-active" data-key="nav_home">Home</a></li>
                 <li><a href="#experience" data-key="nav_experience">Experience</a></li>
-                <li><a href="#skills" class="nav-link-skills" data-key="nav_skills">Skills</a></li>
+                <li><a href="#skills" data-key="nav_skills">Skills</a></li>
                 <li><a href="#certificates" data-key="nav_certificates">Certificates</a></li>
                 <li><a href="#education" data-key="nav_education">Education</a></li>
-                <li><a href="#values" class="nav-link-values" data-key="nav_values">Values</a></li>
+                <li><a href="#values" data-key="nav_values">Values</a></li>
             </ul>
             <div class="nav-right">
                 <div class="lang-switch">
                     <button class="lang-btn active" data-lang="ru">RU</button>
                     <button class="lang-btn" data-lang="en">EN</button>
                 </div>
-                <button class="theme-toggle">☀️</button>
             </div>
         </div>
     </nav>
@@ -50,15 +52,17 @@
     <header class="header" id="home" data-aos="fade-in">
         <div class="container header-content">
             <div class="header-text">
-                <h1 data-key="greeting">Dikarev Roman</h1>
+                <p class="hero-hello" data-key="hero_hello">HELLO!</p>
+                <h1 data-key="greeting">Привет, я <span class="text-accent">Роман Дикарев</span></h1>
                 <p class="header-tagline" data-key="position">Senior Financial Analyst · Budgeting, Modeling & Risk</p>
+                <p class="hero-desc" data-key="hero_desc">Финансовый специалист с опытом в Big-4, IT и логистике. Бюджетирование, аналитика, автоматизация.</p>
                 <ul class="contact-list">
                     <li><span class="contact-ico">📞</span><a href="tel:+79623300289">+7 962 330 02 89</a></li>
                     <li><span class="contact-ico">✉️</span><a href="mailto:dikroman.dr@gmail.com">dikroman.dr@gmail.com</a></li>
                 </ul>
                 <div class="header-buttons">
-                    <a href="assets/cv/resume.pdf" download class="btn btn-download" data-key="download_cv">Download CV</a>
-                    <a href="#experience" class="btn secondary" data-key="view_experience">View Experience</a>
+                    <a href="assets/cv/resume.pdf" download class="btn btn-primary" data-key="download_cv">Download CV</a>
+                    <a href="#experience" class="btn btn-outline" data-key="view_experience">View Experience</a>
                 </div>
                 <div class="social-icons">
                     <a href="https://wa.me/79623300289" class="icon whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
@@ -83,14 +87,16 @@
                     </a>
                 </div>
             </div>
-            <img src="assets/img/photo.jpg?v=20251122" alt="Dikarev Roman" class="header__photo">
+            <div class="header-photo-wrap">
+                <img src="assets/img/photo.jpg?v=20260704" alt="Dikarev Roman" class="header__photo">
+            </div>
         </div>
     </header>
 
     <!-- VIEW MY PORTFOLIO AS — 3 вкладки -->
     <section class="portfolio-view" data-aos="fade-up">
         <div class="container">
-            <h2 class="portfolio-title" data-key="portfolio_as">View My Portfolio As</h2>
+            <h2 class="section-title portfolio-title" data-key="portfolio_as">View My Portfolio As</h2>
             <div class="view-buttons-wrapper">
                 <button class="view-btn active" data-view="hr">HR Professional</button>
                 <button class="view-btn" data-view="finance">Finance Specialist</button>
@@ -101,7 +107,7 @@
     <!-- PROFESSIONAL SUMMARY -->
     <section class="summary" data-aos="fade-up" id="view-summary">
         <div class="container">
-            <h2 data-key="summary_title">Professional Summary</h2>
+            <h2 class="section-title" data-key="summary_title">Professional Summary</h2>
             <div id="hr-summary" class="view-content active">
                 <p data-key="hr_summary">Senior financial specialist with leadership experience in analytics, budgeting and management accounting. Started career in Big-4 audit consulting, continued as financial analyst in an international logistics company, then moved to IT and grew to head of a small finance department at PIK-Digital. Responsible for budgeting, financial control, management reporting and analytics. Reduced company expenses by more than 10%, automated reporting (–30% time), increased cost accounting accuracy from 70% to 95%, developed sanction risk assessment methodology.</p>
             </div>
@@ -114,7 +120,7 @@
     <!-- WORK EXPERIENCE — три колонки -->
     <section class="experience" id="experience" data-aos="fade-up">
         <div class="container">
-            <h2 data-key="experience_title">Work Experience</h2>
+            <h2 class="section-title" data-key="experience_title">Work Experience</h2>
             <div class="experience-grid">
                 <!-- 0. WB-Тех -->
                 <div class="exp-card exp-card--wb">
@@ -257,7 +263,7 @@
     <!-- KEY PROJECTS & EXPERTISE — tile grid -->
     <section class="key-projects" id="projects" data-aos="fade-up">
         <div class="container">
-            <h2 data-key="animated_projects_title">Key Projects & Expertise</h2>
+            <h2 class="section-title" data-key="animated_projects_title">Key Projects & Expertise</h2>
             <div class="projects-grid">
                 <article class="project-tile">
                     <div class="project-tile__icon">📊</div>
@@ -296,7 +302,7 @@
     <!-- SKILLS -->
     <section class="skills" id="skills" data-aos="fade-up">
         <div class="container">
-            <h2 data-key="skills_title">Skills</h2>
+            <h2 class="section-title" data-key="skills_title">Skills</h2>
             <h3 class="skills-subtitle" data-key="skills_tools_title">Инструменты и технические навыки</h3>
             <div class="skills-pills">
                 <span class="pill"><span class="pill-icon">📊</span>MS Excel (Power Query, PivotTable)</span>
@@ -334,7 +340,7 @@
     <section class="certificates" id="certificates" data-aos="fade-up">
         <div class="container">
             <div class="cert-header">
-                <h2 data-key="certificates_title">Сертификаты</h2>
+                <h2 class="section-title" data-key="certificates_title">Сертификаты</h2>
                 <p class="cert-note" data-key="certificates_note">Профессиональные сертификаты и обучение. Файлы подгружаются — скоро появятся в высоком качестве.</p>
             </div>
             <div class="cert-carousel">
@@ -448,7 +454,7 @@
     <!-- EDUCATION -->
     <section class="education" id="education" data-aos="fade-up">
         <div class="container">
-            <h2 data-key="education_title">Образование</h2>
+            <h2 class="section-title" data-key="education_title">Образование</h2>
             <div>
                 <p data-key="education_text">2016 — РЭУ им. Г.В. Плеханова<br>Экономический факультет, специальность «Финансы и кредит»</p>
             </div>
@@ -458,7 +464,7 @@
     <!-- ADDITIONAL INFORMATION -->
     <section class="additional" id="additional" data-aos="fade-up">
         <div class="container">
-            <h2 data-key="additional_title">Дополнительная информация</h2>
+            <h2 class="section-title" data-key="additional_title">Дополнительная информация</h2>
             <div>
                 <p data-key="additional_text"><strong>Языки:</strong> английский — B1<br><br>
                 <strong>Сертификаты и тренинги:</strong><br>
@@ -473,7 +479,7 @@
     <!-- WHAT I'M LOOKING FOR & MY VALUES -->
     <section class="values" id="values" data-aos="fade-up">
         <div class="container">
-            <h2 data-key="values_title">Что я ищу и мои ценности</h2>
+            <h2 class="section-title" data-key="values_title">Что я ищу и мои ценности</h2>
             <div class="values-grid">
                 <div class="values-card values-card--search">
                     <div class="values-card__head">
