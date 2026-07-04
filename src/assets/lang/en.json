@@ -69,6 +69,7 @@
   "tool_claude_desc": "Data analysis, report and methodology drafts. For complex analytics and structuring conclusions.",
   "tool_gemini_desc": "Quick lookups and comparing approaches. For market research and a second opinion on models.",
   "tool_cursor_desc": "Python scripts, dashboard prototypes and FP&A tools without a long development cycle.",
+  "tool_colab_desc": "Python notebooks for quick data analysis, model prototypes and calculation automation without local environment setup.",
   "tool_excel_desc": "Power Query, PivotTable, models, budgets and plan/actual. My core tool every day.",
   "tool_sheets_desc": "Team reporting, DataLens integration and real-time summaries for leadership.",
   "tool_ppt_desc": "CFO/CEO decks: budgets, plan/actual, think-cell and waterfall charts.",
