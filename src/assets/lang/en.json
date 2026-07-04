@@ -19,7 +19,7 @@
   "experience_title": "Work <span class=\"text-accent\">Experience</span>",
   "nav_home": "Home",
   "nav_experience": "Experience",
-  "nav_projects": "Personal Projects",
+  "nav_tools": "Tools",
   "nav_skills": "Skills",
   "nav_certificates": "Certificates",
   "nav_education": "Education",
@@ -64,6 +64,9 @@
   "skills_ai_note": "Used daily to speed up analysis, reporting and automation.",
 
   "animated_projects_title": "Key Projects & <span class=\"text-accent\">Expertise</span>",
+
+  "tools_title": "Tools I <span class=\"text-accent\">Use</span>",
+  "tools_note": "Daily stack — from AI assistants to spreadsheets and presentations",
   "project_budget": "Budget",
   "project_budget_desc": "Budgeting & Planning",
   "project_finmodel": "FinModel",

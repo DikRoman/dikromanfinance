@@ -19,7 +19,7 @@
   "experience_title": "Опыт <span class=\"text-accent\">работы</span>",
   "nav_home": "Главная",
   "nav_experience": "Опыт",
-  "nav_projects": "Проекты",
+  "nav_tools": "Инструменты",
   "nav_skills": "Навыки",
   "nav_certificates": "Сертификаты",
   "nav_education": "Образование",
@@ -64,6 +64,9 @@
   "skills_ai_note": "Использую в повседневной работе для ускорения анализа, подготовки отчётности и автоматизации.",
 
   "animated_projects_title": "Ключевые проекты и <span class=\"text-accent\">экспертиза</span>",
+
+  "tools_title": "Инструменты в <span class=\"text-accent\">работе</span>",
+  "tools_note": "Ежедневный стек — от AI-ассистентов до таблиц и презентаций",
   "project_budget": "Бюджет",
   "project_budget_desc": "Бюджетирование и планирование",
   "project_finmodel": "Финмодель",

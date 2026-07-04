@@ -643,6 +643,102 @@ section[id] { scroll-margin-top: 80px; }
     font-size: 0.85rem;
 }
 
+/* ====================== TOOLS I USE ====================== */
+.tools {
+    padding: 56px 0;
+}
+.tools-note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: -16px auto 36px;
+    max-width: 520px;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.tool-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 28px 16px 22px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    text-align: center;
+}
+.tool-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 87, 34, 0.45);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 24px var(--accent-glow);
+}
+.tool-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.tool-icon svg {
+    width: 36px;
+    height: 36px;
+}
+.tool-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+}
+/* Brand colors */
+.tool-icon--claude {
+    background: linear-gradient(135deg, #D97757 0%, #C4664A 100%);
+    color: #fff;
+}
+.tool-icon--gemini {
+    background: linear-gradient(135deg, #4285F4 0%, #9B72CB 50%, #D96570 100%);
+    color: #fff;
+}
+.tool-icon--cursor {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.tool-icon--excel {
+    background: linear-gradient(135deg, #217346 0%, #185C37 100%);
+    color: #fff;
+}
+.tool-icon--sheets {
+    background: linear-gradient(135deg, #0F9D58 0%, #188038 100%);
+    color: #fff;
+}
+.tool-icon--ppt {
+    background: linear-gradient(135deg, #D24726 0%, #B7472A 100%);
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 560px) {
+    .tools { padding: 40px 0; }
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+    .tool-card { padding: 22px 12px 18px; }
+    .tool-icon { width: 56px; height: 56px; border-radius: 14px; }
+    .tool-icon svg { width: 30px; height: 30px; }
+    .tool-name { font-size: 0.82rem; }
+}
+
 /* ====================== SKILLS ====================== */
 .skills {
     padding: 56px 0;
