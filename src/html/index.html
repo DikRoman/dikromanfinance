@@ -351,109 +351,92 @@
         <div class="container">
             <div class="cert-header">
                 <h2 class="section-title" data-key="certificates_title">Сертификаты</h2>
-                <p class="cert-note" data-key="certificates_note">Профессиональные сертификаты и обучение. Файлы подгружаются — скоро появятся в высоком качестве.</p>
+                <p class="cert-note" data-key="certificates_note">Нажмите на карточку, чтобы открыть сертификат</p>
             </div>
             <div class="cert-carousel">
                 <div class="cert-carousel__fade cert-carousel__fade--left" aria-hidden="true"></div>
                 <div class="cert-carousel__fade cert-carousel__fade--right" aria-hidden="true"></div>
                 <div class="cert-track">
-                    <!-- original set -->
-                    <article class="cert-card cert-card--placeholder">
-                        <div class="cert-thumb"><span>🏅</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" data-cert-type="image" data-cert-src="assets/certificates/files/acca-fa.jpg" data-cert-title="ACCA Financial Accounting">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/acca-fa.jpg" alt="ACCA"></div>
                         <div class="cert-body">
-                            <p class="cert-year">2019 — н.в.</p>
-                            <h3 class="cert-title" data-key="cert_acca_title">ACCA</h3>
-                            <p class="cert-issuer" data-key="cert_acca_issuer">Voronezh State University · в процессе</p>
+                            <p class="cert-year">2019</p>
+                            <h3 class="cert-title" data-key="cert_acca_title">ACCA · Financial Accounting</h3>
+                            <p class="cert-issuer" data-key="cert_acca_issuer">Voronezh State University · 71%</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder">
-                        <div class="cert-thumb"><span>📊</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" data-cert-type="pdf" data-cert-src="assets/certificates/files/yandex-data-analyst.pdf" data-cert-title="Yandex Practicum Data Analyst">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/yandex-data-analyst.png" alt="Yandex Practicum"></div>
                         <div class="cert-body">
                             <p class="cert-year">2022</p>
                             <h3 class="cert-title" data-key="cert_yandex_title">Аналитик данных</h3>
                             <p class="cert-issuer" data-key="cert_yandex_issuer">Яндекс Практикум</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder">
-                        <div class="cert-thumb"><span>🗄️</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" data-cert-type="pdf" data-cert-src="assets/certificates/files/learndb-sql.pdf" data-cert-title="LearnDB SQL">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/learndb-sql.png" alt="LearnDB SQL"></div>
                         <div class="cert-body">
                             <p class="cert-year">2022</p>
                             <h3 class="cert-title" data-key="cert_sql_title">SQL</h3>
                             <p class="cert-issuer" data-key="cert_sql_issuer">LearnDB</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder">
-                        <div class="cert-thumb"><span>📈</span></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2022</p>
-                            <h3 class="cert-title" data-key="cert_powerbi_title">Power BI</h3>
-                            <p class="cert-issuer" data-key="cert_powerbi_issuer">внутреннее обучение</p>
-                        </div>
-                    </article>
-                    <article class="cert-card cert-card--placeholder">
-                        <div class="cert-thumb"><span>💼</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" data-cert-type="pdf" data-cert-src="assets/certificates/files/coursera.pdf" data-cert-title="Coursera Python">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/coursera.png" alt="Coursera"></div>
                         <div class="cert-body">
                             <p class="cert-year">2020</p>
-                            <h3 class="cert-title" data-key="cert_kpmg_title">Audit Methodology</h3>
-                            <p class="cert-issuer" data-key="cert_kpmg_issuer">KEPT (ex-KPMG) Academy</p>
+                            <h3 class="cert-title" data-key="cert_coursera_title">Python · Coursera</h3>
+                            <p class="cert-issuer" data-key="cert_coursera_issuer">University of Michigan</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder cert-card--soon">
-                        <div class="cert-thumb"><span>➕</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" data-cert-type="pdf" data-cert-src="assets/certificates/files/professional-training.pdf" data-cert-title="Project Office Manager">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/professional-training.png" alt="Moscow Business Academy"></div>
                         <div class="cert-body">
-                            <p class="cert-year" data-key="cert_soon_year">Soon</p>
-                            <h3 class="cert-title" data-key="cert_soon_title">Новый сертификат</h3>
-                            <p class="cert-issuer" data-key="cert_soon_issuer">файл скоро будет добавлен</p>
+                            <p class="cert-year">2026</p>
+                            <h3 class="cert-title" data-key="cert_pk_title">Руководитель проектного офиса</h3>
+                            <p class="cert-issuer" data-key="cert_pk_issuer">Moscow Business Academy</p>
                         </div>
                     </article>
 
-                    <!-- duplicated for seamless loop (aria-hidden) -->
-                    <article class="cert-card cert-card--placeholder" aria-hidden="true">
-                        <div class="cert-thumb"><span>🏅</span></div>
+                    <!-- duplicated for seamless loop -->
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="image" data-cert-src="assets/certificates/files/acca-fa.jpg" data-cert-title="ACCA Financial Accounting">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/acca-fa.jpg" alt=""></div>
                         <div class="cert-body">
-                            <p class="cert-year">2019 — н.в.</p>
-                            <h3 class="cert-title" data-key="cert_acca_title">ACCA</h3>
-                            <p class="cert-issuer" data-key="cert_acca_issuer">Voronezh State University · в процессе</p>
+                            <p class="cert-year">2019</p>
+                            <h3 class="cert-title" data-key="cert_acca_title">ACCA · Financial Accounting</h3>
+                            <p class="cert-issuer" data-key="cert_acca_issuer">Voronezh State University · 71%</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder" aria-hidden="true">
-                        <div class="cert-thumb"><span>📊</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/yandex-data-analyst.pdf" data-cert-title="Yandex Practicum Data Analyst">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/yandex-data-analyst.png" alt=""></div>
                         <div class="cert-body">
                             <p class="cert-year">2022</p>
                             <h3 class="cert-title" data-key="cert_yandex_title">Аналитик данных</h3>
                             <p class="cert-issuer" data-key="cert_yandex_issuer">Яндекс Практикум</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder" aria-hidden="true">
-                        <div class="cert-thumb"><span>🗄️</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/learndb-sql.pdf" data-cert-title="LearnDB SQL">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/learndb-sql.png" alt=""></div>
                         <div class="cert-body">
                             <p class="cert-year">2022</p>
                             <h3 class="cert-title" data-key="cert_sql_title">SQL</h3>
                             <p class="cert-issuer" data-key="cert_sql_issuer">LearnDB</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder" aria-hidden="true">
-                        <div class="cert-thumb"><span>📈</span></div>
-                        <div class="cert-body">
-                            <p class="cert-year">2022</p>
-                            <h3 class="cert-title" data-key="cert_powerbi_title">Power BI</h3>
-                            <p class="cert-issuer" data-key="cert_powerbi_issuer">внутреннее обучение</p>
-                        </div>
-                    </article>
-                    <article class="cert-card cert-card--placeholder" aria-hidden="true">
-                        <div class="cert-thumb"><span>💼</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/coursera.pdf" data-cert-title="Coursera Python">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/coursera.png" alt=""></div>
                         <div class="cert-body">
                             <p class="cert-year">2020</p>
-                            <h3 class="cert-title" data-key="cert_kpmg_title">Audit Methodology</h3>
-                            <p class="cert-issuer" data-key="cert_kpmg_issuer">KEPT (ex-KPMG) Academy</p>
+                            <h3 class="cert-title" data-key="cert_coursera_title">Python · Coursera</h3>
+                            <p class="cert-issuer" data-key="cert_coursera_issuer">University of Michigan</p>
                         </div>
                     </article>
-                    <article class="cert-card cert-card--placeholder cert-card--soon" aria-hidden="true">
-                        <div class="cert-thumb"><span>➕</span></div>
+                    <article class="cert-card cert-card--clickable" tabindex="0" role="button" aria-hidden="true" data-cert-type="pdf" data-cert-src="assets/certificates/files/professional-training.pdf" data-cert-title="Project Office Manager">
+                        <div class="cert-thumb cert-thumb--photo"><img src="assets/certificates/thumbs/professional-training.png" alt=""></div>
                         <div class="cert-body">
-                            <p class="cert-year" data-key="cert_soon_year">Soon</p>
-                            <h3 class="cert-title" data-key="cert_soon_title">Новый сертификат</h3>
-                            <p class="cert-issuer" data-key="cert_soon_issuer">файл скоро будет добавлен</p>
+                            <p class="cert-year">2026</p>
+                            <h3 class="cert-title" data-key="cert_pk_title">Руководитель проектного офиса</h3>
+                            <p class="cert-issuer" data-key="cert_pk_issuer">Moscow Business Academy</p>
                         </div>
                     </article>
                 </div>
@@ -526,6 +509,14 @@
             <p>© 2025 Dikarev Roman. All rights reserved.</p>
         </div>
     </footer>
+
+    <div class="cert-modal" id="cert-modal" hidden>
+        <div class="cert-modal__backdrop"></div>
+        <div class="cert-modal__dialog" role="dialog" aria-modal="true" aria-label="Certificate preview">
+            <button type="button" class="cert-modal__close" aria-label="Close">&times;</button>
+            <div class="cert-modal__body"></div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script type="module" src="js/modules/language.js"></script>

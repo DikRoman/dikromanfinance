@@ -1,10 +1,11 @@
 import { initLanguage } from './modules/language.js';
 import { initScrollAnimations } from './modules/scroll-anim.js';
+import { initCertPreview } from './modules/cert-preview.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Инициализация языка и анимаций AOS
     initLanguage();
     initScrollAnimations();
+    initCertPreview();
 
     // === Theme switcher (optional — button removed from UI) ===
     const themeToggle = document.querySelector('.theme-toggle');
