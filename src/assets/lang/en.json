@@ -11,7 +11,7 @@
   "view_experience": "View Experience",
 
   "portfolio_as": "View My Portfolio <span class=\"text-accent\">As</span>",
-  "summary_title": "Professional <span class=\"text-accent\">Experience</span>",
+  "summary_title": "<span class=\"text-accent\">Profile</span>",
   "hr_summary": "Build IT-project financial models with payback analysis, set up planning processes from scratch — from data collection to working models and calculators. Automate data consolidation and reporting with Python, Power Query and AI tools. Deliver analytics and dashboards for FP&A and top management.",
   "finance_summary": "Technical financial analyst with deep expertise in modeling, P&L analysis, management reporting and process automation. Tooling: MS Excel (Power Query, PivotTable), Power BI, 1C, SQL, Python, Google Sheets + Yandex DataLens, think-cell, Visio. Supported investment models, automated consolidation in Python, built dashboards for FP&A and top-management. Actively uses AI tools (ChatGPT, Claude, Cursor) to speed up analysis and automation.",
 
