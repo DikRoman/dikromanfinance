@@ -24,24 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // === View buttons switcher (HR / Finance) ===
-    const viewButtons = document.querySelectorAll('.view-btn');
-
-    viewButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            viewButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const view = btn.dataset.view; // hr | finance
-
-            document.querySelectorAll('#view-summary .view-content').forEach(el => el.classList.remove('active'));
-            const summaryBlock = document.querySelector(`#${view}-summary`);
-            if (summaryBlock) summaryBlock.classList.add('active');
-
-            document.querySelectorAll('.experience .view-content').forEach(el => el.classList.remove('active'));
-            const expBlock = document.querySelector(`#${view}-experience`);
-            if (expBlock) expBlock.classList.add('active');
-        });
-    });
-
 });

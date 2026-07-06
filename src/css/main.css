@@ -482,7 +482,7 @@ section[id] { scroll-margin-top: 80px; }
 
 /* ====================== SUMMARY & EXPERIENCE ====================== */
 .summary, .experience { padding: 44px 0; }
-.summary p, .view-content p {
+.summary p {
     font-size: 1.05rem;
     color: var(--text-muted);
     line-height: 1.8;
