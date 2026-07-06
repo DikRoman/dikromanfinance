@@ -692,15 +692,15 @@ section[id] { scroll-margin-top: 80px; }
     width: 100%;
     margin: auto 0 0;
     padding: 0 10px;
-    font-size: 0.68rem;
-    line-height: 1.45;
+    font-size: 0.7rem;
+    line-height: 1.5;
     color: #fff;
     background: linear-gradient(180deg, rgba(255, 87, 34, 0.97) 0%, rgba(230, 74, 25, 0.98) 100%);
     border-radius: 0 0 var(--radius) var(--radius);
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    overflow-wrap: break-word;
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
+    overflow-wrap: normal;
     word-break: normal;
     max-height: 0;
     opacity: 0;
@@ -710,7 +710,7 @@ section[id] { scroll-margin-top: 80px; }
 }
 .tool-card:hover .tool-desc,
 .tool-card:focus-within .tool-desc {
-    max-height: 220px;
+    max-height: 280px;
     opacity: 1;
     padding: 12px 10px 14px;
 }
