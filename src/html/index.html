@@ -30,7 +30,7 @@
     <nav class="navbar">
         <div class="container navbar-main">
             <a class="logo" href="#home"><span class="logo-accent">D</span><span data-key="logo_rest">ikarev Roman</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="#home" class="nav-active" data-key="nav_home">Home</a></li>
                 <li><a href="#experience" data-key="nav_experience">Experience</a></li>
                 <li><a href="#tools" data-key="nav_tools">Tools</a></li>
@@ -43,6 +43,11 @@
                     <button class="lang-btn active" data-lang="ru">RU</button>
                     <button class="lang-btn" data-lang="en">EN</button>
                 </div>
+                <button type="button" class="nav-toggle" aria-label="Меню" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
             </div>
         </div>
     </nav>

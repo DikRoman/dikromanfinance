@@ -9,6 +9,28 @@ document.addEventListener('DOMContentLoaded', () => {
     initCertPreview();
     initCertCarousel();
 
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle && navLinks) {
+        const closeNav = () => {
+            document.body.classList.remove('nav-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        };
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = document.body.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeNav);
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) closeNav();
+        });
+    }
+
     // === Theme switcher (optional — button removed from UI) ===
     const themeToggle = document.querySelector('.theme-toggle');
     if (themeToggle) {
