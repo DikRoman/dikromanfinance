@@ -25,7 +25,7 @@ export function initLanguage() {
             const key = element.getAttribute('data-key');
             if (translations[key]) {
                 // Для элементов с innerHTML (поддержка <br>)
-                if (element.tagName === 'P' || element.tagName === 'LI' || element.tagName === 'H1' || element.tagName === 'H2') {
+                if (element.tagName === 'P' || element.tagName === 'LI' || element.tagName === 'H1' || element.tagName === 'H2' || element.tagName === 'H3') {
                     element.innerHTML = translations[key];
                 } else {
                     element.textContent = translations[key];
