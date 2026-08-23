@@ -9,8 +9,63 @@
     padding: calc(var(--nav-height) + 48px) 0 40px;
 }
 
+.materials-hero__layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
 .materials-hero__inner {
-    max-width: 720px;
+    flex: 1;
+    max-width: 620px;
+    min-width: 0;
+}
+
+.materials-hero__author {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.materials-hero__avatar-wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.materials-hero__avatar-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -14%;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 65%);
+    filter: blur(20px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.materials-hero__avatar {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 72% 38%;
+    border: 4px solid var(--accent);
+    box-shadow: 0 0 32px var(--accent-glow), 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.materials-hero__author-caption {
+    max-width: 200px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--text-muted);
+    margin: 0;
 }
 
 .materials-hero__eyebrow {
@@ -306,6 +361,27 @@
 @media (max-width: 768px) {
     .materials-hero {
         padding: calc(var(--nav-height) + 28px) 0 32px;
+    }
+
+    .materials-hero__layout {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 28px;
+    }
+
+    .materials-hero__author {
+        align-self: center;
+    }
+
+    .materials-hero__avatar-wrap,
+    .materials-hero__avatar {
+        width: 168px;
+        height: 168px;
+    }
+
+    .materials-hero__author-caption {
+        max-width: 260px;
+        font-size: 0.9rem;
     }
 
     .materials-hero__desc {

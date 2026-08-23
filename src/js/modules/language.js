@@ -40,6 +40,13 @@ export function initLanguage() {
             }
         });
 
+        document.querySelectorAll('[data-key-alt]').forEach(element => {
+            const key = element.getAttribute('data-key-alt');
+            if (translations[key]) {
+                element.setAttribute('alt', translations[key]);
+            }
+        });
+
         // Обновляем атрибут lang у html
         document.documentElement.lang = currentLang;
     }
