@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist/assets/fonts/montserrat && cp -r src/html/* dist/ 2>/dev/null || true && cp -r src/assets dist/ 2>/dev/null || true && cp -r src/css dist/ 2>/dev/null || true && cp -r src/js dist/ 2>/dev/null || true && cp node_modules/aos/dist/aos.css dist/css/aos.css && cp node_modules/aos/dist/aos.js dist/js/aos.js && cp node_modules/@fontsource/montserrat/files/montserrat-{cyrillic,cyrillic-ext,latin,latin-ext}-{400,500,600,700,800}-normal.woff2 dist/assets/fonts/montserrat/",
+    "build": "bash scripts/build.sh",
     "serve": "npm run build && cd dist && python3 -m http.server 8000",
     "start": "npm run serve",
     "vercel-build": "npm run build",
@@ -13,9 +13,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@fontsource/montserrat": "^5.2.8",
-    "aos": "^2.3.4",
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
     "copyfiles": "^2.4.1"
   }
 }
